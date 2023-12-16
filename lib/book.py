@@ -2,13 +2,13 @@
 
 class Book:
     
-    def __init__(self, page_count = -1 , title = "Default"):
+    def __init__(self, title, page_count):
         self.page_count = page_count
         self.title = title
 
     def get_page_count(self):
         print("Getting page count")
-        print(self._page_count)
+        return self._page_count
         
     def set_page_count(self, page_count):
         if(isinstance(page_count, int)):
@@ -24,7 +24,7 @@ class Book:
             self._title = title
         else: print("not a string")
         
-    def turn_page():
+    def turn_page(self):
         print("Flipping the page...wow, you read fast!")
 
 
